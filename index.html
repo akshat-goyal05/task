@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Discovery and Playlist Curation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Silkscreen:wght@400;700&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Silkscreen:wght@400;700&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=M+PLUS+Rounded+1c&family=Rancho&family=Satisfy&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Alef:wght@400;700&family=Allura&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Covered+By+Your+Grace&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Eater&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Irish+Grover&family=Kreon:wght@300..700&family=Lacquer&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Rancho&family=Satisfy&family=Silkscreen:wght@400;700&family=Square+Peg&family=Tillana:wght@400;500;600;700;800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div id="logo">
+                <h2>ZARA</h2>
+              </div>
+  
+             
+            <ul>
+              <li><a href="#HOME">HOME</a></li>
+              <li><a href="#mens">mens</a></li>
+              <li><a href="#womens">women</a></li>
+              <li><a href="#kids">kids</a></li>
+              <li>
+                <a href="https://www.zara.com/" target="_blank" style="text-decoration: none;">
+                    <button style="display: flex; align-items: center; gap: 8px; padding: 10px 20px; border: none; border-radius: 5px; background-color: #78837c; color: rgb(46, 38, 38); font-size: 16px; cursor: pointer;">
+                    /ZARA-IN/
+                       
+                    </button>
+                  </a>
+                  
+              </li>
+            </ul>
+          </header>
+        
+        <section class="HOME" id="home">
+            <div class="home-page">
+                <h1>JOIN OUR NEWSLETTER</h1>
+                <p> </p>
+                <a href="#" class="btn">SHOP NOW</a>
+            </div>
+        </section>
+        <section class="GENERE">
+            <div id="firstline">
+                <div class="box1" id="box1">
+                    <h2></h2>
+                    <p> </p>
+                </div>
+                <div class="box1" id="box2">
+                    <h2></h2>
+                    <p> </p>
+                </div>
+                <div class="box1" id="box3">
+                    <h2></h2>
+                    <p></p>
+                </div>  
+            </div>
+            <div id="secondline">
+                <div class="box2" id="box4">
+                    <h2></h2>
+                    <p>Experience electrifying guitars, powerful vocals, and timeless energy.</p>
+                </div>
+                <div class="box2" id="box5">
+                    <h2>Classical</h2>
+                    <p>Dive into the world of symphonies </p>
+                </div>
+        </div>
+    </section>
+      
+    <section class="TRENDING" id="trending">
+        <h2 class="section-title"> 20% OFF SELECTED ITEMS!
+        </h2>
+        <div class="trending-container">
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/23440287/pexels-photo-23440287/free-photo-of-white-satin-shirt-from-zara-hanging-on-a-hanger.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2_.jpg?w=2880 alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>AUGENA-REMARK</h3>
+                    <p>$-45</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/12580617/pexels-photo-12580617.jpeg?auto=compress&cs=tinysrgb&w=600 alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>ZARA- BLUE SPIRIT</h3>
+                    <p>$-68</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/16034366/pexels-photo-16034366/free-photo-of-zara-cosmetic-on-satin-sheet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>TWILIGHT MUAVE </h3>
+                    <p>$-23</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>TEMBLA BOHLE </h3>
+                    <P>$-10-15</P>
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/6368104/pexels-photo-6368104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2/9k= alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>IMAZUEN</h3>
+                    <p>$-65</p>
+                </div>
+            </div>
+            
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/4464819/pexels-photo-4464819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2/9k= alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>ZARA-SOUL</h3>
+                    <P>$-50</P>
+
+                </div>
+            </div>
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/14736080/pexels-photo-14736080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>ZARA-SEOUL</h3>
+                    <P>$-39</P>
+
+                </div>
+            </div>
+            
+            <div class="trending-item">
+                <img src=https://images.pexels.com/photos/9793850/pexels-photo-9793850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 alt="Album Cover" class="album-cover">
+                <div class="song-details">
+                    <h3>ZARA- T-SHIRT</h3>
+                    <P>$-13</P>
+
+                </div>
+
+           
+            </div>
+            <div class="carousel-card" onclick="playMusic('audio3', this)">
+                    
+                    
+                </div>
+            </div>

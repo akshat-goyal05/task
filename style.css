@@ -1,0 +1,387 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+
+}
+
+
+html,body{
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+
+
+    background-color: #111111;
+}
+#main{
+    background-color: #111111;
+    height: 100vh;
+  
+}
+/* Navbar Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #logo h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  #logo h2 span img {
+    margin-left: 8px;
+    width: 30px;
+    height: 20px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  ul li a:hover {
+    color: #00ff7f;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  button {
+    background-color: #00ff7f;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #121212;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #18d685;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5);
+  }
+
+  button img {
+    width: 24px;
+    height: 24px;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+#home {
+    background-image: url(https://static.zara.net/assets/public/db26/41d6/33aa45648676/89e13512dc01/image-landscape-db634aec-f379-4adf-972a-f0a121c0e167-default_0/image-landscape-db634aec-f379-4adf-972a-f0a121c0e167-default_0.jpg?ts=1728999719440&w=1920);
+    background-position: center;
+    -webkit-filter: brightness(0.5);
+    -webkit-filter: saturate(2);
+    background-size: cover;
+    height: calc(100% - 15%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+  margin-bottom: 0;
+  position: relative;
+ margin: 0;
+}
+
+#home  h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    } 
+
+.home-page p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3%;
+}
+.home-page .btn{
+    background-color: crimson;
+    color: white;
+    padding: 0.7rem 2.5rem;
+    
+text-decoration: none;
+border-radius: 50px;
+
+}
+.GENERE {
+    padding: 50px 5%;
+    background-color: #111111; /* Match the theme */
+}
+
+#firstline, #secondline {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.box1, .box2 {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(135deg, #1DB954, #1ed760); /* Vibrant gradient */
+    border-radius: 15px; /* Rounded edges for modern look */
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animations */
+}
+
+.box1:hover, .box2:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.box1 h2, .box2 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: "Cinzel", serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adds a classy glow */
+}
+
+.box1 p, .box2 p {
+    font-size: 1rem;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+/* Specific Background Images (Optional) */
+#box1 {
+    background-image: url(https://cdn.cookielaw.org/logos/5435e8e3-1f77-4efd-bb7e-591b5a6e876e/d7899571-c1e4-4d71-8e87-09246e838e5d/d5b1d450-62b7-4f62-94ba-f9835c6495ed/Standard.png);
+    width: 14%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+#box2 {
+    background-image: url(https://images.pexels.com/photos/8532638/pexels-photo-8532638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+#box3 {
+    background-image: url(https://images.pexels.com/photos/26288915/pexels-photo-26288915/free-photo-of-zara-clothing-store-in-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding-top: 8%;
+}
+
+#box4 {
+  background-image: url(https://images.pexels.com/photos/19595924/pexels-photo-19595924/free-photo-of-zara-brand-name-on-white-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);  
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding-bottom: 3%;
+}
+
+#box5 {
+    background-image: url(https://images.pexels.com/photos/15673587/pexels-photo-15673587/free-photo-of-blurred-people-walking-along-black-wall-with-zara-logo.jpeg);
+    
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.section-title1{
+    font-size: 2.5em;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Trending Section */
+/* Trending Section Styling */
+#trending {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.trending-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+
+}
+
+.trending-item {
+    background-color: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.trending-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.album-cover:hover {
+    transform: scale(1.05);
+}
+
+.song-details h3 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #FFD700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.song-details p {
+    font-size: 1.1em;
+    color: #bbb;
+}
+/* Section Styling */
+.featured-artists {
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Carousel Container */
+.carousel {
+  display: flex;
+  gap: 85px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; 
+  
+}
+.carousel::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Carousel Cards */
+.carousel-card {
+  background: #2c2c2c;
+  border-radius: 10px;
+  width: 300px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carousel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.carousel-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.carousel-info {
+  padding: 20px;
+}
+.carousel-info h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.carousel-info p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+.play-button {
+  background-color: #f04e31;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.play-button:hover {
+  background-color: #d63d28;
